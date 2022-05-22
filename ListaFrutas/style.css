@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font: normal 550 1.4rem 'Montserrat', sans-serif;
+    line-height: 1.1;
+    color: var(--color-lyrics);
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(10, 0, 0, 1)),
+      url(https://image.shutterstock.com/image-photo/variety-fresh-fruit-water-drops-600w-15107077.jpg);
+    background-size: cover;
+  }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: antiquewhite;
+    width: 80%;
+    height: 720px;
+    background-color: #191c32d7;
+    margin: 30px 0px 0px 170px;
+    border-radius: 50px;
+  }
+
+span {
+    height: 60px;
+    width: 9%;
+}
+
+span,
+div em {
+  padding: 5px;
+  border: 1px solid green;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+h1, h6 {
+    text-align: center;
+}
+
+h6 {
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.btn1 {
+    background-color: #eb3c10;
+    border-radius: 20px;
+    color: antiquewhite;
+    border-color: #eb3c10;
+    width: 20%;
+    font-size: 20px;
+    height: 40px;
+}
+
+.btn2 {
+    background-color: #189c96;
+    border-radius: 20px;
+    color: antiquewhite;
+    border-color: #189c96;
+    width: 20%;
+    font-size: 20px;
+    height: 40px;
+}
+
+.section-btn {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.frutas {
+    text-align: center;
+}
+
+.frutas span {
+    border-color: #212426;
+    border-radius: 30px;
+    background-color: #212426;
+    padding: 15px 0px 0px 0px;
+}
+
+/* impar */
+.frutasImpar span:nth-child(2n + 1) {
+  background-color: #189c96;
+}
+
+/* par */
+.frutasPar span:nth-child(2n) {
+  background-color: #eb3c10;
+}

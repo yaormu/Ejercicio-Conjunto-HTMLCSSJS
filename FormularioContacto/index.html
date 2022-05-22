@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Bienvenido al formulario</h1>
+        <p id="description">
+          Por favor diligenciar todos los campos solicitados.
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="formu">
+          <label for="name">Nombres</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ingrese sus nombres"
+            required
+          />
+          <p class="warnings" id="warnings1"></p>
+        </div>
+        <div class="formu">
+          <label for="email">Correo</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingrese su correo electronico"
+            required
+          />
+          <p class="warnings" id="warnings2"></p>
+        </div>
+        <div class="formu">
+          <label for="name">Asunto</label>
+          <input
+            type="text"
+            name="asunto"
+            id="asunto"
+            placeholder="Ingrese asunto del tema"
+            required
+          />
+          <p class="warnings" id="warnings3"></p>
+        </div>
+        <div class="formu">
+          <label for="name">Mensaje</label>
+          <input
+          type="text"
+          id="comment"
+          class="input-textarea"
+          name="comment"
+          placeholder="Ingrese aquí su mensaje o comentario.."
+          required
+          />
+          <p class="warnings" id="warnings4"></p>
+        </div>
+        <div class="formu btn-formu">
+          <button type="submit" id="submit" class="submit-button" onclick="envioDatos()">
+            Enviar
+          </button>
+          <button type="reset" id="reset" class="submit-button">
+            Limpiar
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
